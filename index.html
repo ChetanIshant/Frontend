@@ -1,0 +1,260 @@
+<a href="https://www.google.com">Google</a>
+absolute link:
+the link which directly refers to a webpage
+
+relative link:
+the link which refers to another file and then goes to their respective webpage
+
+Image tag:
+in the image tag, when the image is not able to load then we can add something so that the user can see what the same image refers to 
+this can be done using alt in the img tag
+in the image tag we can adjust the height and width of the image, but a good practice states that we should adjust one from these both at one time
+height and width are the attributes of img tag but it is good to modify only one of these at a time because it may result in the 
+
+<br/>: this tag is used to move to next line 
+
+<b>bold</b>
+<i>italic</i>
+<u>underline</u>
+
+<big>big</big>
+<small>small</small>
+used to display big and small text on your page
+
+<hr/> horizontal rular : used to give space between lines in html 
+mainly used for separation of different parts
+
+<sub>2</sub>: used to add subscript text in the page example <p>H<sub>2</sub>o</p> H2O (h20, water)
+<sup>2</sup>: used to add superscript text in the page example <p>A<sub>2</sub></p> A2 (a square)
+
+<pre>Text</pre>: this tag in html is used to count self-given spaces in html as by default html don't count extra spaces in <p></p> tag 
+but in <pre></pre> tag it is possible to add spaces in html 
+
+
+Non-sementic tags: these are the tags, jinhe dekh k pta ni lga skte ki ye kya krta hoga (eg. div, span)
+
+Semantic tags: aise tags jinhe dekh k hi unka matlab smjh aajaye (eg. header, footer, main)
+with the help of sementic tags we can write the code in a structured way and in a very good readable form
+these tags improve the SEO of a webpage
+good user experience
+that's why use right tags  
+these tags are used to make the webpage more dividable and readable
+
+<header></header> this tag includes the headings of a webpage
+<main></main> this tag includes the main part of a webpage
+<footer></footer> this tag includes the foot of a webpage(eg. contact info etc)
+
+inside the main tag we will discuss three main tags including:
+<section></section> for a section on your webpage/ isme humare webpage me sections divide ho jate h
+<artice></artice> for an article on your page
+<aside></aside> for content aside main content(ADs): while deploying the webpage this section tells the google that the content in this section is not main content
+eg: google ads on any webpage
+SEO doesn't read the content inside the aside tag as it will affect the ranking of an webpage
+
+inside the anchod tag:
+if we want that when someone wants to open the clickable link in the new tab 
+then there we will be using a target keyword in the anchor tag 
+eg: <a href="https://www.google.com" target="_main">Google</a>
+
+we can also use an image in place of text for clickable links:
+eg: <a href="https://www.google.com" <img src="image link" alt="Google">
+
+in the image tag if we adjust height then width apne app adjust hojati h as per the height
+and this is same for adjusting width 
+
+
+<div></div>: non-semantic tag
+it is a container used for HTML elements 
+it is a block element means: it covers full width of the screen 
+inline elements: these elements takes the width as per their demand, they don't take full width as block elements
+these block and inline elements are used very carefully 
+
+block tags: 
+<address>
+<article>
+<aside>
+<blockquote>
+<canvas>
+<dd>
+<div>
+<dl>
+<fieldset>
+<figcaption>
+<figure>
+<footer>
+<form>
+<nav>
+<noscript>
+<ol>
+<p>
+<pre>
+<h1>-<h6>
+<header>
+<hr>
+<li>
+<section>
+<table>
+<tfoot>
+<ul>
+<dt>
+<main>
+<video
+
+<span></span>: 
+span tag is also a container for HTML elements 
+but it includes the inline elements of HTML which don't acquire full width of the screen 
+
+list of span tags:
+<a>
+<abbr>
+<acronym>
+<b>
+<bdo>
+<big>
+<br>
+<button>
+<dfn>
+<em>
+<i>
+<img>
+<input>
+<kbd>
+<output>
+<q>
+<samp>
+<script>
+<select>
+<small>
+<span>
+<label>
+<map>
+<object>
+<tt>
+<strong>
+<sub>
+<sup>
+<textarea>
+<cite>
+<var>
+<time>
+
+
+lists in HTML :
+HTML have 2 types of lists:
+ordered and unordered
+ordered list consist of 1,2,3 or a,b,c 
+<ol>
+<li>Apple</li>
+<li>Mango</li>
+</ol>
+
+unordered list consist of bullets(~) etc as place of 1,2,3
+<ul>
+<li>Grapes</li>
+<li>Banana</li>
+</ul>
+<li> here is list item
+
+
+tables in html:
+they are used to represent real life table data
+<tr> used to display table row
+<td> used to display table data
+<th> used to display table heading
+
+at first the row of the table is created,then the heading is generated after that the data is added to the table
+<table>
+<tr>
+<th> Name </th>
+<th> Roll No </th>
+</tr>
+<tr>
+<td> Chetan </th>
+<th> 750 </th>
+</tr>
+</table>
+ 
+captions are the first attribute of tables 
+with the help of captions we can add title of a particular table 
+<caption>Student data</caption>
+
+<thead></thead>: this attribute of table includes the header part of table 
+<tbody></tbody>: this part includes the main data, body of a particular table 
+
+<th colspan="2">
+INFORMATION
+</th>
+colspan in table states that the particular heading will take the heading of required columns 
+
+
+
+**
+<form action>
+form content 
+</form>
+
+Action attribute is used to define what action needs to be performed when a form is submitted
+<form action="/action.php" >
+
+first element of form:
+<input type="text" placeholder="Enter Name"> 
+placeholder in input states that what is already written in the form 
+placeholder is the background text which will disappear when something is written by the user 
+
+radio button: in forms radio button helps to choose one from different options
+<input type="radio" value="classXI" name"class">classXI
+value part of this input goes to the backend and the last part i.e classXI is to be printed, they are synced so that what the user chooses will goes in the backend 
+
+
+label is the attribute of the form which is used to assist the blind people so that the device can read the following data in the label 
+basically isme hota h ki, hum selection vale (radion button) k alawa agr text pe bhi click krenge to vo particular option select ho jayega 
+label adds the feature of selection of an option by clicking on the text as well
+
+class & id 
+A class is used to group multiple HTML elements so that the same CSS style or JavaScript behavior can be applied to all of them
+Best when many elements share the same style
+
+An id is used to identify a single, unique HTML element on a page.
+Best for specific elements
+
+<div id="id1" class="group1"> 
+</div> 
+<div id="id2"> class="group1">
+</div>
+
+checkbox: ye vaha use kiya jaata h jab 1 se jyada options select krne ho 
+reverse of radio button
+
+
+textarea: in form the textarea is adjustable and it is basically used for feedbacks 
+<textarea name="feedback" id="feedback" placeholder="Please add Feedback">
+</textarea> 
+
+Select in FORM: 
+it is used in dropdowns: where multiple options shown and one is selected from them 
+<select name="city" id="city"> 
+<option value="Delhi">  Delhi </option>
+<option value="Mumbai">  Delhi </option>
+<option value="Banglore">  Delhi </option>
+</select>
+
+
+
+<iframe src="link"></iframe>
+iframe tag is used to display another website into a website
+mostly used tag and helpful to display other webpage in our webpage
+
+
+video tag:
+this tag is used to display video on our html webpage
+<video src=" link " > Video </video>
+
+attributes of video tag
+-controls: it is used to add control like volume ,play-pause etc
+-height and width: it is used to adjust height and width of an video showed on the webpage
+-loop: it repeates the video by itself, video khtm hote hi dobara apne app chl jayegi 
+-autoplay: jab bhi webpage pe jayege to video apne app hi chl jayegi, but it is not a good user experience because the user may do not have good internet connection or have less bandwidth, so enabling autoplay option is not a good practice for better user experience.
+
+
+
+ 
