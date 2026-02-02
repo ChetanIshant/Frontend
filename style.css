@@ -1,0 +1,370 @@
+#CSS stands for Cascading style sheet
+it is used to decorate or add style to the webpage 
+
+# CSS can be implemented in three ways:
+
+1. inline: it comes in the same HTML document, it is the first priority, it is not that much used because it's not sufficient to use on large scale
+<h1 style="color:red"> HelloWorld! </h1>
+
+2. <style></style>: style tag is a type of implementation in which the code of CSS is written in the head part of the HTML document 
+<style>
+h1{
+color : red;
+}
+</style>
+#it will make all the h1 heading in red color
+
+3. external: it is mostly used, because professionally it is good to use CSS in another file 
+the external file is linked to the html file and then properties are added to the document 
+<link rel="stylesheet" href="style.css">
+this is how the CSS file is linked to the HTML file, the link attribute is placed in the head part of the HTML document
+
+
+
+# color property (foreground)
+used to set the color of foreground(jo cheez samne hoti h, not the background
+h1{
+color:blue;
+}
+
+p{
+color:red;
+}
+
+# color property (background)
+body{
+baclground-color:black;
+}
+
+color system:
+RGB(red, green, blue)
+mainly these three colors are used to make all the other colors to style the document 
+the range of each color lies between (0-255) 
+color: rgb(0,255,0);
+
+next color system is hex color system 
+it is the short form of RGB in hexadecimal form
+eg: color:#ff0000;
+
+
+Selector:
+
+1. universal selector: it is a type of selector which is applied universaly to the document
+eg:
+*{
+color:red;
+}
+the whole document will become red 
+
+2. element selector: for a particular tab
+h1{
+color:green;
+}
+
+3. id selector: this type of selector includes the id given in the HTML document
+modification is done as per the id uniquey
+
+eg: <h1 id="HeadingOne"> This is the first heading </h1> #html document
+HeadingOne{
+color:brown;
+}
+by this way we can uniquely modify the HTML document
+good programmers use 1 id for only one element
+class can be used for such operations
+
+4. class selector: when we used to give same modification to more than one element
+class selector is used in place of id selector when the modification is done on more than one element
+in css file the class selector is written as:
+.myclass{
+color:green;
+}
+
+inline style have the highest priority as compare to other styles
+
+text-properties:
+1.alignment:by default the text is aligned to left
+left, centre, right:
+eg: p{
+text-align = right;
+}
+
+in css3 two more aligns are added that are (start(left), end(right)) basically used for lang like Urdu.
+
+text-decoration:
+text-decoration : underline / overline / line-through
+
+font-weight: bold/bolder/light/lighter
+limit: 100-900
+
+font-family : arial
+font-family : arial, roboto (if the browser doesn't support arial, then another option is roboto)
+
+units in CSS:
+pixels (px) used in CSS 
+96px = 1 inch
+eg: font-size=25px;
+
+line-height: states the gap between lines written in the document.
+eg: line-height=20px;
+
+text-transform: uppercase, lowercase
+used to capitalize the text etc. 
+
+
+
+Box-Model In CSS:
+BOX model have properties :
+Height: height of box
+Width: width of box
+Border: border have its own 2-3 properties(height, width etc.) 
+Padding: Space between text and border
+Margin: Space between one box and another.
+
+Border:
+Used to set an element's border
+border-width : 2px;
+border-style : solid / dotted / dashed
+border-color : black;
+mainly these are the three modifications to be done to each border.
+
+border: shorthand
+in which we give the three modification in order to one line.
+eg: border: 2px solid black
+
+when we need to make the curves in round format, we use border-radius.
+Used to round the corners of an element's outer border edge
+eg: border-radius : 10px;
+
+border-radius: 50% ->> circle.
+
+Padding:
+it is done from all the four directions, it can be done individually or in shorthand form as well 
+
+eg: padding: 50px; //states that padding is done from all four sides of measurement: 50px
+padding: 1px 2px 3px 4px; //shorthand form : top,right,bottom,left (left->clockwise)
+
+margin: the space between 2 boxes is margin
+it can be modified:
+eg: margin: 50px; 50px margin from all sides
+we also have the shorthand for margin:
+eg: margin: 1px 2px 3px 4px; // shorthand form : top,right,bottom,left (left->clockwise)
+
+Display property in CSS:
+inline: Takes only the space required by the element. (no margin/ padding) #we can modify inline/block in CSS by display. 
+block: Takes full space available in width. #we can also make the inline element as block elements.
+by default the block elements starts from the next line.
+inline-block - Similar to inline but we can set margin & padding.
+none - To remove element from document flow. #in enabling the none display will remove the respective block and another block will occupy their space 
+
+Visibility: hidden states that the particular box will be hidden but the space won't be occupied by any other block 
+
+
+RGBA (RGBA A stands for alpha):
+it is used to decide the darkness of RGB from 0 to 1 
+0 is the lightest and 1 is the darkest
+eg: color: rgba(255, 0, 0, 1);
+
+Reative units in CSS are those units which vary from webpage to webpage 
+mainly three relative units are focused: (%, em, rem)
+
+Percentage: It is often used to define a size as relative to an element's parent object.
+isme jo andr vala div hota h, vo apne external div k hisab se as per the percentage space equip krta h
+
+em: it states that how much times the size of child will be as compare to the parent 
+eg: 
+box1{
+height:100px;
+width:200px;
+background-color: green;
+font-size: 10px;
+}
+
+box2{
+height:100px;
+width:200px;
+background-color: green;
+font-size: 2em; #2 times of the parent(box1) font size;
+}
+#if we use the em for width, it will pick the font-size of same child, not of the parent.
+
+Rem
+Root EM: related to the font size of the root element
+
+
+POSITUION CSS property:
+This property is very imp in CSS, The position CSS property sets how an element is positioned in a document.
+static - default position (The top, right, bottom, left, and z-index properties have no effect)
+relative - element is relative to itself. (The top, right, bottom, left, and z-index will work)
+absolute - positioned relative to its closest positioned ancestor. (removed from the flow)
+fixed - positioned relative to browser. (removed from flow)
+sticky - positioned based on user's scroll position
+
+when positioning is done in CSS the boxes may overlap, by default the box that is firstly created comes under and the box which is lately created comes upper.
+this can be controlled by: z-index
+
+z-index won't work on static positioning
+
+
+Background-image:
+It is used to add a background image to a box or to the document 
+Syntax:
+background-image : url("image.jpeg");
+but if we use only this the image will enlarge and not fit in the document in a proper way
+
+to overcome this we use background size in the style which helps to adjust the image in a proper way 
+background-size : cover / contain / auto
+mainly: cover is used as it filles the box in a proper manner including the spacing and size.
+  
+
+
+
+Flexbox: Flexible Box Layout
+It is a one-dimensional layout method for arranging items in rows or columns. 
+to make a container flex, we should use display: flex; to do that 
+helps in arranging the elements in a good manner
+
+Think of a flex container as a smart parent that controls how its children are laid out.
+flex container contains flex items and main and cross axis, it is not necessary that these axises are to be vertical or horizontal they are mutable and can be used in place of each other
+agr main axis horizontal hoga to cross axis vertical hoga and they will make a angle of 90 degree at there intersection
+
+the very first property of flexbox is flexbox direction 
+It sets how flex items are placed in the flex container, along which axis and direction.
+
+these are the four ways of doing that: 
+
+flex-direction : row; (default) #in this the main axis is row and the direction is from left to right |(box1,box2,box3)   |
+flex-direction : row-reverse; #in this the main axis is row and the direction is from right to left |   (box3,box2,box1)|
+flex-direction : column; #in this the main axis is column and the direction is from top to bottom
+box1
+box2
+box3
+flex-direction : column-reverse; #in this the main axis is column and the direction is from bottom to top
+box3
+box2
+box1
+if we maded  flexbox container, then all the flex items will comes under that particular container, chae unka size adjust na hota ho, but ve adjust ho jayege to fill in that same container
+
+jab tkk flex properties allow krti h, tab tkk hum flex item k size ko reduce ya increase krr skte h to adjust in the flexbox
+but if they are at their lowest, fr flexbox se bahar nikal jaati h flexitems.
+
+FlexProperties for FlexItems:
+justify-content : alignment along the main axis.
+flex-start / flex-end / centre / space-evenly /
+
+
+Flex Properties
+for Flex Container
+
+justify-content : alignment along the main axis.
+flex-start / flex-end / centre / space-evenly /
+flex-wrap : nowrap / wrap / wrap-reverse
+align-items : alignment along the cross axis.
+align-content : alignment of space between & around the content along cross-axis
+
+Flex Properties
+for Flex Item
+
+align-self : alignment of individual along the cross axis.
+flex-grow : how much a flex item will grow relative to the rest of the flex items if
+space is available
+flex-shrink : how much a flex item will shrink relative to the rest of the flex items if
+space is available
+
+
+
+Media queries:
+They help to make the website more responsive
+a website is said to be responsive when it is able to run on all the screens(mobile, ipad, laptop etc) perfectly
+
+@media (width : 600px) {
+div {
+background-color : red;
+}
+}
+#states that when the width becomes 600px the background color should be red
+max media queries are written on the basis of width 
+
+@media (min-width : 200px) and (min-width : 300px) {
+div {
+background-color : red;
+}
+}
+
+
+Last chapter of CSS: 
+
+Transition:
+In CSS the boxes are in different states: (eg: hover, active)
+We can change their background color when cursor moves to them , or the text color as well
+Transitions enable you to define the transition between two states of an element.
+
+transition-property : property you want to transition (font-size, width etc.)
+transition-duration : 2s / 4ms ..
+transition-timing-function : ease-in / ease-out / linear / steps .. //these function decides the happening of the tranisition
+transition-delay : 2s / 4ms ..
+
+we have the shorthand for Transition as well: (saves time)
+property name | duration | timing-function | delay
+transition: font-size 2s ease-in-out 0.2s;
+
+
+Transform in CSS:
+it is the updated form of transition:
+Used to apply 2D & 3D transformations to an element
+for rotation:
+transform: rotate(45deg);
+if we perform rotation the inside data of the box will also rotate as per the command.
+
+scale():
+property used to adjust the size of box in times: 
+eg: transform: scale(2); will double the size of box
+
+translate:
+transform: translate(20px);//moves the box as per the hovering 
+transform: translate(20px, 50px);// X-axis and y-axis.
+transform: transform: translateX(20px);
+transform: translateY(20px); //for both individually
+
+skew: dono trf se element ko pkd k keech lena 
+rectangle/square->parallelogram
+transform: skew (30deg);
+
+
+Animation in CSS: to animate CSS elements:
+@keyframe myName{
+from { font-size : 20px; }
+to { font-size : 40px; }
+} //@keyframe is the syntax, myName is the name of Animation:
+this @keyframe is the template/blueprint of a particular animation
+this is not the actual animation, but animation will not work if this is not included
+
+keyframe includes the starting frame of document and as well as the frame it to be converted further 
+it doesn't make any animation changes to the document, keyframe is just a template
+
+to apply animation we use animation properties:
+
+Animation Properties
+animation-name
+animation-duration
+animation-timing-function
+animation-delay
+animation-iteration-count //new this states that for how much times will the animation lasts
+
+animation-direction //new we have 4 types of animation direction 
+normal, reverse, alternate, alternate-reverse
+normal: cycle, reverse: to-to-from, alternate: to-to-from and from-to-to, alternate-reverse: includes both alternate and reverse
+
+animation also have shorthand: which saves time
+animation : myName 2s linear 3s infinite normal
+
+in place of from and to in the keyframe animation: we can also use percentage:
+from: 0%
+mid: 50% 
+to: 100%
+
+@keyframe myName {
+0% { font-size : 20px; }
+50% { font-size : 30px; }
+100% { font-size : 40px; }
+}
+
