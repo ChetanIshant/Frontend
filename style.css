@@ -368,3 +368,9 @@ to: 100%
 100% { font-size : 40px; }
 }
 
+
+CSS (Cascading Style Sheets) is the design engine of the web. While HTML builds the structure of a webpage, 
+CSS decides how everything looks and feels. It controls colors, spacing, fonts, alignment, animations, and layouts. 
+The “cascading” part means styles follow priority rules, allowing flexible customization. 
+CSS enables responsive design using tools like Flexbox, Grid, and media queries, ensuring websites adapt smoothly across 
+mobiles, tablets, and desktops without changing the core content structure.
